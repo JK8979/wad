@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    
+    <title>Registered user</title>
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <button id="sts">Increment</button>
-    <h1>counter:<span id="count">0</span></h1>
-    <script>
-    
-         document.getElementById("sts").addEventListener("click", function(){
-            
-            let count=0;
-            
-             
-             count++;
-             document.getElementById("count").textContent = count;
-             console.log(count);
- 
-         });
+    <h1>Regestraion Form</h1>
+    <form id="reg_Form"> 
         
- 
-     </script>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" required><br><br>
+
+        <label for="mobile">Mobile NO:</label>
+        <input type="text" id="mobile" required><br><br>
+
+        <button type="button">Submit</button>
+        
+    </form>
+    <a href="user.html">View regestriated user</a>
 </body>
 </html>
